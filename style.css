@@ -9,6 +9,8 @@
 
 body {
     padding: 5.3rem 3.7rem 65.4rem;
+    background-image: url("images/background.png");
+    max-height: 1100px;
     
 }
 
@@ -19,6 +21,8 @@ body h1 {
     font-weight: 700;
     line-height: normal;
     color: #A54328;
+    font-size: clamp(2.8rem, 2vw + 1 rem, 4rem);
+    line-height: clamp(3.6rem, 2vw + 1rem, 5rem);
 }
 
 body p, ul, ol {
@@ -77,22 +81,29 @@ ol {
     
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 
     body {
         padding: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         
     }
 
     main {
         max-width: 1020px;
         display: flex;
         gap: 10rem;
+        justify-content: center;
+        align-items: center;
         
     }
 
     main>div {
         max-width: 384px;
         text-align: justify;
+        
     }
 
     ul li {
@@ -100,6 +111,8 @@ ol {
         max-width: 450px;
         align-items: center;
     }
+
+    
 
 
 }
